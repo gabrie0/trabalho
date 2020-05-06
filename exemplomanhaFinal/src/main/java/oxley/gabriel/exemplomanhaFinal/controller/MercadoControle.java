@@ -36,7 +36,7 @@ import java.util.List;
             }
             return new ResponseEntity<MercadoEntity>(HttpStatus.NOT_FOUND);
         }
-
+        @PostMapping
         public ResponseEntity<MercadoEntity> cadastrar(@RequestBody MercadoEntity mercadoEntity) {
             return new ResponseEntity<MercadoEntity>(
                     this.mercadoRepository.save(mercadoEntity),

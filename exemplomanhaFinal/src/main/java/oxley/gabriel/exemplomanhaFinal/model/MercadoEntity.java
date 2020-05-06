@@ -24,8 +24,10 @@ public class MercadoEntity {
     @Column(name = "nome")
     private String nome;
 
-    @Column(name = "salrio")
+    @Column(name = "salario")
     private double salario;
+
+
 
 
 }//fim
